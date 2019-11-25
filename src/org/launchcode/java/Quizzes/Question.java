@@ -5,10 +5,10 @@ import java.util.Arrays;
 public abstract class Question {
     private String questionType;
     private String question;
-    private String[] answer;
+    private String answer;
     private int questionNumber;
 
-    public Question(String aQuestionType, String aQuestion, String[] anAnswer) {
+    public Question(String aQuestionType, String aQuestion, String anAnswer) {
         this.questionType = aQuestionType;
         this.question = aQuestion;
         this.answer = anAnswer;
@@ -24,7 +24,7 @@ public abstract class Question {
     }
 
     public String getAnswer() {
-        return Arrays.toString(answer);
+        return answer;
     }
 
     public int getQuestionNum() {
@@ -35,7 +35,7 @@ public abstract class Question {
         question = aQuestion;
     }
 
-    public void setAnswer(String theAnswer[]) {
+    public void setAnswer(String theAnswer) {
         answer = theAnswer;
     }
 }
